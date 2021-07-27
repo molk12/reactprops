@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Descreption from './Profile/component'
+
+
 
 function App() {
+  const handleName =(x)=>{
+    alert (`hi ${x}` )
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Descreption   name="Molk Naddari" bio="molk naddari from kasserine student in Go My Code" profession="devlopper" handleName={ handleName}  >
+      <img src="nature.jpg"></img>
+    </Descreption>
+           
     </div>
   );
 }
